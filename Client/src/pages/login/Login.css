@@ -1,0 +1,109 @@
+.login{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80") no-repeat center center/cover;
+}
+
+.loginTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+    letter-spacing: 1px;
+    text-align: center;
+    background: rgba(255,255,255,0.7);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    padding: 32px 24px 24px 24px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    gap: 16px;
+}
+
+.loginForm label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #222;
+}
+
+.loginForm input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 8px;
+    background: #f9f9f9;
+    transition: border-color 0.2s;
+}
+.loginForm input:focus {
+    border-color: #646cff;
+    outline: none;
+}
+
+.loginButton {
+    background: #646cff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+.loginButton:disabled {
+    background: #a0a0a0;
+    cursor: not-allowed;
+}
+.loginButton:hover:not(:disabled) {
+    background: #535bf2;
+}
+
+.loginRegisterButton {
+    background: #fff;
+    color: #646cff;
+    border: 1px solid #646cff;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+.loginRegisterButton:hover {
+    background: #646cff;
+    color: #fff;
+}
+
+.loginForgot {
+    text-align: right;
+    color: #535bf2;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.loginError {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: center;
+    background: #ffeaea;
+    border-radius: 6px;
+    padding: 6px;
+}

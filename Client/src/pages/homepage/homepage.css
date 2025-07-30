@@ -1,0 +1,47 @@
+/* Modern and futuristic homepage layout */
+.home {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 1200px) {
+  .home {
+    gap: 24px;
+    padding: 32px 8px;
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px 4px;
+  }
+}
+
+/* Ensure posts stay horizontal on landscape screens */
+.posts {
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .posts {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+}
